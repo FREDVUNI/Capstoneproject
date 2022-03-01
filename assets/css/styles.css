@@ -10,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #25364a;
+    background-color: #ffff;
 }
 #header{
     padding-top: 1rem;
@@ -18,8 +19,8 @@ body {
     justify-content: center;
     position:fixed;
     width:100%;
-    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%);
-
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 4%);
+    background-color: #ffff;
 }
 .container{
     display: flex;
@@ -69,8 +70,100 @@ ul {
     sans-serif;
     font-size: 18px;
     color:#707070;
-    font-weight:500;
+    font-weight:400;
 }
-#banner .block {
-    background-color:red;
+#banner{
+    display: flex;
+    justify-content: center;
+    width:70%;
+    margin-top:100px;
+    background-color: #ffff;
+}
+#banner .image-block img {
+    border: 3px solid #22AAE2;
+    /* #0693e3 */
+    border-radius: 50%;
+    width: 100%;
+    height: 200px;
+    max-width: 200px;
+
+}
+#banner .text-block{
+    padding: 20px 20px 20px 20px;
+    width:600px;
+}
+#banner .text-block h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+#banner .text-block h1 span{
+    color: #22AAE2;
+    font-weight: 700;
+}
+.icons a i {
+    margin-top: 20px;
+    padding: 0px 10px 0px 0px;
+}
+.icons a .fab{
+    font-size: 30px;
+    color:#707070;
+}
+#projects{
+    background-color:#fafafa;
+}
+.project-title{
+    justify-content: center;
+    text-align: center;
+    margin-top:40px;
+    display:block;
+    padding-top: 20px;
+}
+#project-block{
+    display: flex;
+}
+.project {
+    margin-top: 40px;
+    display: block;
+    width: 400px;
+    padding:15px;
+}
+#project-block .project a img{
+    border: 0.1px solid #707070;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    border: 0.1px solid #707070;
+    cursor: pointer;
+    margin: 20px;
+}
+.project a img {
+    border: 0.1px solid #707070;
+}
+.project h4{
+    padding: 0px 20px 0px 20px;
+}
+.project p {
+    padding: 0px 20px 0px 20px;
+}
+#Contact{
+  display: flex;
+  justify-content: center;
+  width:70%;
+  margin-top:100px;
+  background-color: #ffff;
+}
+.contact-title {
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact-image img{
+    width: 300px;
+    height: 300px;
+    text-align:right;
+    border-radius: 10px;
 }
