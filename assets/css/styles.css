@@ -22,6 +22,53 @@ body {
     box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 4%);
     background-color: #ffff;
 }
+.projects {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    background-color: #fafafa;
+}
+#project-title {
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#all-projects{
+    background-color: #fafafa;
+    margin-bottom: 40px;
+
+}
+.project a img {
+    border: 0.1px solid #707070;
+    width: 300px;
+}
+
+.project h4 {
+    padding: 10px 20px 0px 20px;
+    
+}
+
+.project p {
+    padding: 0px 20px 40px 20px;
+}
+@media (min-width: 600px) {
+    .projects {
+        max-width: 600px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px) {
+    .projects {
+        max-width: 600px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .container{
     display: flex;
     justify-content: center;
@@ -119,41 +166,11 @@ ul {
 #projects{
     background-color:#fafafa;
 }
-.project-title{
-    justify-content: center;
-    text-align: center;
-    margin-top:40px;
-    display:block;
-    padding-top: 20px;
-}
-#project-block{
-    display: flex;
-}
-.project {
-    margin-top: 40px;
-    display: block;
-    width: 400px;
-    padding:15px;
-}
+
 #project-block .project a img{
     border: 0.1px solid #707070;
 }
-.project img{
-    width: 100%;
-    border-radius: 10px;
-    border: 0.1px solid #707070;
-    cursor: pointer;
-    margin: 20px;
-}
-.project a img {
-    border: 0.1px solid #707070;
-}
-.project h4{
-    padding: 0px 20px 0px 20px;
-}
-.project p {
-    padding: 0px 20px 0px 20px;
-}
+
 #contact {
   width:100%;
   margin-top:100px;
@@ -162,7 +179,9 @@ ul {
 .contact-title {
     justify-content: center;
     text-align: center;
+    margin-top: 40px;
     display: block;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 .contact-image img{
@@ -205,310 +224,139 @@ ul {
 .footer-desc #copyright {
     font-weight: bold;
 }
-
+/* iphone,samsung and other small screens */
 @media (max-width:480px) {
     .navigation {
         display: none;
     }
     #banner {
-        width: 100%;
         display: block;
         background-color: #ffff;
     }
-
     #banner .image-block img {
-        border: 1px solid #000;
+        border: 3px solid #22AAE2;
         /* #0693e3 */
         border-radius: 50%;
-        margin-top: 30px;
-    }
-
-    #banner .text-block {
-        padding: 10px 10px 10px 10px;
         width: 100%;
-        margin-top: 20px;
-        justify-content: center;
-        text-align: center;
+        height: 200px;
+        max-width: 200px;
+        margin-top: 80px;
 
     }
-    #banner .text-block h1 {
+
+    #title {
+        padding-top: 1rem;
         font-size: 25px;
-        font-weight: 600;
+        font-weight: 200;
+        color: #007bff;
     }
 
-    #banner .text-block h1 span {
-        color: #22AAE2;
-        font-weight: 700;
+    #description {
+        color: #6c757d !important;
+        font-size: 16px;
     }
     #projects{
-        background-color:#fff;
-        width:100%;
-        justify-content: center;
-        text-align: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
+       display: flex;
+       justify-content: center;
+       width:70%;
+       margin-top:100px;
+       background-color: #ffff;
     }
-    #project-block {
-        padding: 0px 10px 10px 10px;
-        width: 80%;
-        margin-top: 20px;
-        justify-content: center;
-        display: block;
-    }
-    .project a img {
-        /* border: 0.1px solid #707070; */
-        width:300px;
-    }
-    .project-title {
-        margin-top: 40px;
-    }
-
-    #contact {
-        width: 90%;
-        display: block;
-        background-color: #ffff;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .contact-image img {
-        display: none;
-    }
-
-    #details {
-        display: none;
-    }
-    #footer{
-        background-color:#fff;
+    #project-block .project a img {
+        border: 0.1px solid #707070;
+        width: 100px;
     }
 }
+
+/* bigger than iphones */
 @media (max-width:768px) {
-    .navigation {
-        display: none;
-    }
+     .navigation {
+         display: none;
+     }
+     #banner .image-block img {
+         border: 3px solid #22AAE2;
+         /* #0693e3 */
+         border-radius: 50%;
+         width: 100%;
+         height: 200px;
+         max-width: 200px;
+         margin-top: 80px;
 
-    #banner {
-        width: 100%;
-        display: block;
-        background-color: #ffff;
-    }
+     }
 
-    #banner .image-block img {
-        border: 1px solid #000;
-        /* #0693e3 */
-        border-radius: 50%;
-        margin-top: 30px;
-    }
-
-    #banner .text-block {
-        padding: 10px 10px 10px 10px;
-        width: 100%;
-        margin-top: 20px;
-        justify-content: center;
-        text-align: center;
-
-    }
-
-    #banner .text-block h1 {
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    #banner .text-block h1 span {
-        color: #22AAE2;
-        font-weight: 700;
-    }
-
-    #projects {
-        background-color: #fff;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    #project-block {
-        padding: 0px 10px 10px 10px;
-        width: 80%;
-        margin-top: 20px;
-        justify-content: center;
-        display: flex;
-    }
-
-    .project a img {
-        /* border: 0.1px solid #707070; */
-        width: 300px;
-    }
-
-    .project-title {
-        margin-top: 40px;
-    }
-
-    #contact {
+    #survey-form {
+        color: white;
         width: 90%;
-        display: block;
-        background-color: #ffff;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .contact-image img {
-        display: none;
-    }
-
-    #details {
-        display: none;
-    }
-
-    #footer {
-        background-color: #fff;
+        padding-bottom: 3rem;
     }
 }
-@media (max-width:1024px) {
-    .navigation {
-        display: none;
-    }
 
-    #banner {
-        width: 100%;
-        display: block;
-        background-color: #ffff;
-    }
-
-    #banner .image-block img {
-        border: 1px solid #000;
-        /* #0693e3 */
-        border-radius: 50%;
-        margin-top: 30px;
-    }
-
-    #banner .text-block {
-        padding: 10px 10px 10px 10px;
-        width: 100%;
-        margin-top: 20px;
-        justify-content: center;
-        text-align: center;
-
-    }
-
-    #banner .text-block h1 {
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    #banner .text-block h1 span {
-        color: #22AAE2;
-        font-weight: 700;
-    }
-
-    #projects {
-        background-color: #fff;
-        width: 100%;
-        text-align: left;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    #project-block {
-        padding: 0px 10px 10px 10px;
-        width: 80%;
-        margin-top: 20px;
-        display: flex;
-    }
-    .project a img {
-        /* border: 0.1px solid #707070; */
-        width: 300px;
-    }
-
-    .project-title {
-        margin-top: 40px;
-    }
-
-    #contact {
-        width: 90%;
-        display: block;
-        background-color: #ffff;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .contact-image img {
-        display: none;
-    }
-
-    #details {
-        display: none;
-    }
-
-    #footer {
-        background-color: #fff;
-    }
-}
+/* ipads,tablets etc */
 @media (max-width:1200px) {
      .navigation {
          display: none;
      }
-
      #banner {
          display: block;
          background-color: #ffff;
          justify-content: center;
          text-align: center;
-         margin-bottom: 100px;
+         margin-bottom:150px;
      }
+    #banner .image-block img {
+        border: 1px solid #000;
+        /* #0693e3 */
+        border-radius: 50%;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #banner .text-block {
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        text-align: center;
+        
+    }
 
-     #banner .image-block img {
-         border: 1px solid #000;
-         /* #0693e3 */
-         border-radius: 50%;
-         width: 100%;
-         margin-top: 30px;
-     }
+    #banner .text-block h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
 
-     #banner .text-block {
-         padding: 10px 10px 10px 10px;
-         width: 100%;
-         margin-top: 20px;
-         justify-content: center;
-         text-align: center;
-
-     }
-
-     #banner .text-block h1 {
-         font-size: 25px;
-         font-weight: 600;
-     }
-
-     #banner .text-block h1 span {
-         color: #22AAE2;
-         font-weight: 700;
-     }
-
-     #project-block {
-         padding: 0px 10px 10px 10px;
-         width: 100%;
-         margin-top: 20px;
-         justify-content: center;
-         display: block;
-     }
-
-     .project-title {
-         padding-top: 40px;
-     }
-
-     #contact {
-         width: 90%;
-         display: block;
-         background-color: #ffff;
-         justify-content: center;
-         text-align: left;
-         margin: 20px;
-     }
-
-     .contact-image img {
-         display: none;
-     }
-
-     #details {
-         display: none;
-     }
+    #banner .text-block h1 span {
+        color: #22AAE2;
+        font-weight: 700;
+    }
+    #project-block {
+        padding: 0px 10px 10px 10px;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        display:block;
+    }
+    .project-title {
+        padding-top: 40px;
+    }
+    #contact {
+       width:90%;
+       display: block;
+       background-color: #ffff;
+       justify-content: center;
+       text-align: left;
+       margin:20px;
+    }
+    .contact-image img {
+        display:none;
+    }
+    .contact-details #details {
+        width: 500px;
+        padding: 20px;
+    }
+    #details{
+        display:none;
+    }
+    .contact-details .icons {
+        margin-left: 40px;
+    }
 }
